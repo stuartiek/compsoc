@@ -18,10 +18,11 @@ header img{
 .about{
     margin-left: 3em;
     margin-right: 3em;
-    display: flex;
+/*     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    vertical-align: middle;
+    vertical-align: middle; */
+    float: left;
 }
 .aboutInfo p{
     font-size: 1.5rem;
