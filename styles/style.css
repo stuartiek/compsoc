@@ -27,8 +27,8 @@ header img{
     vertical-align: middle; */
     float: left;
 }
-.aboutInfo p{
-    font-size: 1.5rem;
+.aboutInfo {
+    /*font-size: 1.5rem;*/
 }
 .mascot img{
     width: 30em;
