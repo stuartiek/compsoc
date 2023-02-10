@@ -15,6 +15,9 @@ header img{
     height: 30vh;
     mix-blend-mode: multiply;
 }
+.heroTxt{
+    font-size: 4em;
+}
 .about{
     margin-left: 3em;
     margin-right: 3em;
