@@ -20,7 +20,7 @@ header img{
     margin-right: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     vertical-align: middle;
 }
 .aboutInfo p{
