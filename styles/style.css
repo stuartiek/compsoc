@@ -11,8 +11,8 @@ header{
     height: 100vh;
 }
 header img{
-    width: 15em;
-    height: 15em;
+    width: 15vw;
+    height: 15vh;
     mix-blend-mode: multiply;
 }
 .about{
