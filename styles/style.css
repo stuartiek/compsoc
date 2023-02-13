@@ -50,7 +50,7 @@ body{
 }
 header{
 /*     background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(https://stuartiek.github.io/compsoc/styles/images/m_Cyber-Security-lab_1006-ZF-9537-66107-1-003.jpeg); */
-    /* background-image:url(/styles/images/pexels-dan-cristian-pădureț-1476321.jpg); */
+     background-image:url(/styles/images/pexels-dan-cristian-pădureț-1476321.jpg); 
     background-size :cover;
     height: 100vh;
     margin-bottom: 20vh;
