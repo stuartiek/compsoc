@@ -94,7 +94,8 @@ video{
 
 }
 .map{
-    background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/styles/images/WorldMap.svg");
+/*     linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), */
+    background-image:  url("styles/images/WorldMap.svg");
     background-repeat: no-repeat;
     background-size:contain;
     height: 800px;
