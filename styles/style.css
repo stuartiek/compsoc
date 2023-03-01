@@ -3,23 +3,20 @@
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+/* Track */
+::-webkit-scrollbar-track {
     background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #888; 
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #555; 
-  }
+}
 
 
 body{
@@ -27,6 +24,7 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     overflow-y: scroll;
+    color: #2a363b;
 }
 .nav{
     display: flex;
@@ -48,12 +46,14 @@ body{
     text-decoration: none;
     
 }
+nav ul li a:active{
+    color: aqua;
+}
 header{
 /*     background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(https://stuartiek.github.io/compsoc/styles/images/m_Cyber-Security-lab_1006-ZF-9537-66107-1-003.jpeg); */
-     background-image:url(styles/images/pexels-dan-cristian-pădureț-1476321.jpg); 
-    background-size :cover;
-    height: 100vh;
-    margin-bottom: 20vh;
+    /* background-image:url(/styles/images/pexels-dan-cristian-pădureț-1476321.jpg); */
+    /* background-size :cover; */
+    margin-bottom: 20px;
 }
 .hero p{
     margin-left: 1em;
@@ -68,13 +68,17 @@ header{
     font-size: 4em;
     text-align: center;
 }
+
+
+
+
 .about{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 20em;
+    margin-right: 20em;
 }
 .aboutTxt{
     font-size: 1.5em;
@@ -89,24 +93,182 @@ video{
     height: 100%;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer{
-    height: 300px;
-    background-image:url(/styles/images/footer.png);
-    background-size :cover;
+.map{
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/styles/images/WorldMap.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 800px;
 }
-.footer h3{
+.map > *{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 10em;
+    padding-top:15%;
+    font-size: larger;
+    
+}
+.map > * button{
+    background-color: #d74543;
+    border: none;
+    border-radius: 20px;
+    width: 20%;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.map > * button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.societyJoin{
+    background-image: url("/styles/images/Meteor.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+
+
+
+/* table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+    height: 80em;
+  overflow: scroll;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+tr, th{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #dddddd;
     text-align: center;
+    padding: 8px;
+    vertical-align: middle;
+}
+tr, td{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #dddddd;
+    text-align:left;
+    vertical-align: top;
+    
+}
+.eventDate{
+    font-weight: bolder;
+    line-height: 26pt;
+} */
+table{
+    border-collapse: separate;
+    margin: auto;
+    border-spacing: 0 40px;
+}
+tr{
+    background-color: #ffffff;
+    border-spacing: 0 40px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 100px;
+}
+.eventInfo{
+    height: 200px;
+    width: 600px;
+    padding-left: 20px;
+}
+.eventImg{
+    height: 200px;
+    width: 300px;
+}
+.eventImg img{
+    height: 100%;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+
+/*
+
+CONTACT PAGE
+
+*/
+
+.contactForm{
+    background-color: #888;
+    width: 40%;
+    margin:auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input[type=text ], select, textarea{
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+FOOTER
+UPDATED
+
+*/
+.footer{
+    position: relative;
+    margin: auto;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    border-top: 0.5px solid #2a363b;
+    color: #2a363b;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.footer .footerInfo{
+    margin-left: 50px;
+}
+.footer .bottomNav ul{
+    list-style-type: none;
+    align-items: baseline;
+    margin-right: 10em;
+}
+.footer .bottomNav li{
+    padding: 5px;
+}
+.footer .bottomNav a{
+    color: #2a363b;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#copyright{
+    /* color: #781d7d; */
+    color: #d74543;
 }
