@@ -1,5 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+/* 
 
+    BOOTSTRAP
+
+*/
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 40rem;
+  }
+ /* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  /* rtl:begin:remove */
+  .featurette-heading {
+    letter-spacing: -.05rem;
+  }
+  
+  /* rtl:end:remove */
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }  
+
+/* 
+
+    SCROLL BAR
+
+*/
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -18,13 +98,21 @@
     background: #555; 
 }
 
+/* 
+
+    MAIN 
+    CSS 
+
+*/
 
 body{
     width: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    overflow-y: scroll;
     color: #2a363b;
+}
+.nav img{
+  mix-blend-mode: multiply;
 }
 .nav{
     display: flex;
@@ -32,96 +120,95 @@ body{
     flex-direction: row;align-items: center;
     margin-left: 2em;
     margin-right: 2em;
+    height: 150px;
 }
+
 .nav ul{
     list-style-type: none;
 }
+
 .nav ul li{
     float: left;
 }
+
 .nav ul li a{
     color: black;
     font-size: 1.5rem;
     padding: 14px 16px;
     text-decoration: none;
-    
 }
-nav ul li a:active{
-    color: aqua;
-}
+
 header{
-/*     background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(https://stuartiek.github.io/compsoc/styles/images/m_Cyber-Security-lab_1006-ZF-9537-66107-1-003.jpeg); */
-    /* background-image:url(/styles/images/pexels-dan-cristian-pădureț-1476321.jpg); */
-    /* background-size :cover; */
     margin-bottom: 20px;
+}
+.hero video{
+    display: block;
+
+margin-left: auto;
+
+margin-right: auto;
 }
 .hero p{
     margin-left: 1em;
     margin-right: 1em;
 }
-/* header img{
-    width: 40vw;
-    height: 30vh;
-    mix-blend-mode: multiply;
-} */
+
 .heroTxt{
     font-size: 4em;
     text-align: center;
 }
-
-
-
 
 .about{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    margin-left: 20em;
-    margin-right: 20em;
+    margin-left: 10em;
+    margin-right: 10em;
 }
+
 .aboutTxt{
     font-size: 1.5em;
 }
+
 .mascot img{
     width: 30em;
     height: 40em;
 }
-video{
-    top: 0;
-    width: 100%;
-    height: 100%;
 
-}
+
+
 .map{
-/*     linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), */
     background-image:  linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://stuartiek.github.io/compsoc/styles/images/WorldMap.svg");
     background-repeat: no-repeat;
     background-size:contain;
     height: 800px;
 }
+
 .map > *{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     margin-left: 10em;
     padding-top:15%;
     font-size: larger;
-    
 }
+
 .map > * button{
     background-color: #d74543;
     border: none;
     border-radius: 20px;
-    width: 20%;
+    width: 100px;
     padding: 10px;
     color: #ffffff;
     cursor: pointer;
     transition: 0.3s;
 }
+
 .map > * button:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 .societyJoin{
     background-image: url("/styles/images/Meteor.svg");
     background-repeat: no-repeat;
@@ -129,147 +216,237 @@ video{
     height: 600px;
 }
 
+/* 
 
-
-
-/* table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 70%;
-    margin: auto;
-    height: 80em;
-  overflow: scroll;
-}
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-tr, th{
-    height: 100px;
-    width: 100px;
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-    vertical-align: middle;
-}
-tr, td{
-    height: 100px;
-    width: 100px;
-    border: 1px solid #dddddd;
-    text-align:left;
-    vertical-align: top;
+    EVENTS
+    PAGE 
     
+*/
+.eventsContent h1{
+    text-align: center;
+    margin-left: 50px;
+    font-size: 30px;
 }
-.eventDate{
-    font-weight: bolder;
-    line-height: 26pt;
-} */
+.eventsContent h2{
+    text-align: center;
+    margin-left: 50px;
+   
+}
 table{
     border-collapse: separate;
     margin: auto;
     border-spacing: 0 40px;
 }
+
 tr{
     background-color: #ffffff;
     border-spacing: 0 40px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     height: 100px;
 }
+
 .eventInfo{
     height: 200px;
     width: 600px;
     padding-left: 20px;
     padding-right: 20px;
 }
+.eventInfo h1{
+    text-align: start;
+}
+
 .eventImg{
     height: 200px;
     width: 300px;
 }
+
 .eventImg img{
     height: 100%;
     width: 100%;
     vertical-align: bottom;
 }
-
-
+.twitter a{
+  margin: auto;
+}
 /*
 
-CONTACT PAGE
+    CONTACT 
+    PAGE
 
 */
 
-.contactForm{
-    background-color: #888;
-    width: 40%;
-    margin:auto;
-}
-form{
-    display: flex;
-    flex-direction: column;
-}
-input[type=text ], select, textarea{
-    width: 60%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+.contactContent{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 50%;
+  margin: auto;
 }
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+input[type=submit] {
+  background-color: #d74543;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 /*
 
-FOOTER
-UPDATED
+    Join 
+    PAGE
 
 */
+
+.joinContent{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 50%;
+  margin: auto;
+}
+
+.joinContent a{
+  color: #d74543;
+}
+
+.joinContent ul {
+  list-style: none;
+}
+
+.joinContent ul li::before {
+  content: "\2022";
+  color: #d74543;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+/*
+
+    GALLERY
+    PAGE
+
+*/
+
+.w3-row img {
+  margin-bottom: -7px
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px
+}
+
+/*
+
+    MEMBERS
+    PAGE
+
+*/
+
+.membersHead{
+  margin-left: 10%;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+.projectCard{
+  width: 20em;
+  height: 30em;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 0 10% 10% 10%;
+}
+.projectImg img{
+  width: 100%;
+  height: 15em;
+  border-radius: 0 10% 0 10%;
+  border-bottom:  3px solid #d74543;
+}
+.projectText{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  height: 8em;
+}
+.btn{
+  padding: 20px 16px;
+}
+button{
+  background-color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: #555;
+  cursor:pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+button a{
+  text-decoration: none;
+  color: #555;
+}
+button:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*
+
+    FOOTER
+    UPDATED
+
+*/
+
 .footer{
     position: relative;
-    margin: auto;
+    margin-top: 100px;
     bottom: 0;
     width: 100%;
     height: 200px;
-    border-top: 0.5px solid #2a363b;
+    border-top: 0.2px solid #2a363b;
     color: #2a363b;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
 }
+
 .footer .footerInfo{
     margin-left: 50px;
 }
+
 .footer .bottomNav ul{
     list-style-type: none;
     align-items: baseline;
     margin-right: 10em;
 }
+
 .footer .bottomNav li{
     padding: 5px;
 }
+
 .footer .bottomNav a{
     color: #2a363b;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
 }
+
 #copyright{
     /* color: #781d7d; */
     color: #d74543;
